@@ -3,9 +3,14 @@
                       ONE CENTER SCRIPT TO RULE THEM ALL
                       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Usage: $ ./centerlines.gawk -v w=[0-9]+ <stdin
-       w controls line character width (default: 79)
+Usage:  $ ./centerlines.gawk -v w=[0-9]+ <stdin
+        w controls line character width (default: 79)
 
-$ ./centerlines.gawk <<< "this line is now centered"
+$ ./centerlines.gawk -v w=50 <<< "this line is now centered"
 
-                           this line is now centered
+            this line is now centered
+
+Can be easily integrated into nano or vim:
+  # .nanorc
+  unbind F4 main
+  bind F4 "{execute}| centerlines.gawk -v w=79" main
