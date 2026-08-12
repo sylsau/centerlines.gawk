@@ -1,0 +1,11 @@
+                      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                               CENTERLINES.GAWK
+                      ONE CENTER SCRIPT TO RULE THEM ALL
+                      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Usage: $ ./centerlines.gawk -v w=[0-9]+ <stdin
+       w controls line character width (default: 79)
+
+$ ./centerlines.gawk <<< "this line is now centered"
+
+                           this line is now centered
