@@ -12,5 +12,4 @@ $ ./centerlines.gawk -v w=50 <<< "this line is now centered"
 
 Can be easily integrated into nano or vim:
   # .nanorc
-  unbind F4 main
-  bind F4 "{execute}| centerlines.gawk -v w=79" main
+  bind F13 "{execute}| centerlines.gawk -v w=79" main
